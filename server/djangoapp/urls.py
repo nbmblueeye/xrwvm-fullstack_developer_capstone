@@ -28,7 +28,7 @@ urlpatterns = [
     path(
         route='get_cars',
         view=views.get_cars,
-        name ='getcars'
+        name='getcars'
     ),
     # Get Dealers
     path(
