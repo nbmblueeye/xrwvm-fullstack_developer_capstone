@@ -103,7 +103,7 @@ def get_cars(request):
 # def get_dealerships(request):
 def get_dealerships(request, state="All"):
     if (state == "All"):
-        endpoint = "/fetchDealers"
+        endpoint = "/fetchDealers/"
     else:
         endpoint = "/fetchDealers/" + state
     dealerships = get_request(endpoint)

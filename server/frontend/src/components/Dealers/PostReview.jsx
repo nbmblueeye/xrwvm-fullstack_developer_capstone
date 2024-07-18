@@ -28,7 +28,7 @@ const PostReview = () => {
       name = sessionStorage.getItem("username");
     }
     if(!model || review === "" || date === "" || year === "" || model === "") {
-      alert("All details are mandatory")
+      alert("All details are mandatory");
       return;
     }
 
@@ -81,7 +81,7 @@ const PostReview = () => {
     });
     const retobj = await res.json();
     
-    let carmodelsarr = Array.from(retobj.CarModels)
+    let carmodelsarr = Array.from(retobj.CarModels);
     setCarmodels(carmodelsarr)
   }
   useEffect(() => {
