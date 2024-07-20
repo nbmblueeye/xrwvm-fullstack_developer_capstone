@@ -65,6 +65,7 @@ urlpatterns = [
         view=views.get_inventory,
         name='get_inventory'
     ),
+
 ] + static(
     settings.MEDIA_URL,
     document_root=settings.MEDIA_ROOT
