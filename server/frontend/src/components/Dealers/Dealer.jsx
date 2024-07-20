@@ -83,6 +83,7 @@ return(
           <img src={senti_icon(review.sentiment)} className="emotion_icon" alt='Sentiment'/>
           <div className='review'>{review.review}</div>
           <div className="reviewer">{review.name} {review.car_make} {review.car_model} {review.car_year}</div>
+          <a href={`/searchcars/${id}`}>SearchCars</a>	
         </div>
       ))}
     </div>  

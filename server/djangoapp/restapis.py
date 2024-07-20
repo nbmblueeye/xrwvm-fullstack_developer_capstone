@@ -19,6 +19,7 @@ searchcars_url = os.getenv(
     'searchcars_url',
     default="http://localhost:3050/")
 
+
 # def get_request(endpoint, **kwargs):
 # Add code for get requests to back end
 def get_request(endpoint, **kwargs):
@@ -79,8 +80,8 @@ def searchcars_request(endpoint, **kwargs):
         # Call get method of requests library with URL and parameters
         response = requests.get(request_url)
         return response.json()
-    except:
+    except Exception as err:
         # If any error occurs
-        print("Network exception occurred")
+        print(f"Network exception occurred: {err}")
     finally:
         print("GET request call complete!")
